@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/x-icon"
+        href="https://cdn-icons-png.freepik.com/512/9656/9656832.png?ga=GA1.1.844585620.1718394008">
+    <title>Consultar CEP</title>
+</head>
+
+<body>
+    <header>
+        <div id="logo">
+            <div id="logo-1">
+                <h1 class="title">Consultar <span id="cepname">CEP</span></h1>
+                <img src="https://cdn-icons-png.freepik.com/512/9656/9656863.png?ga=GA1.1.844585620.1718394008">
+            </div>
+            <p>CÓDIGO DE ENDEREÇAMENTO POSTAL</p>
+        </div>
+        <p>Webservice gratuito de alto desempenho para consulta de Código de Endereçamento Postal (CEP) do Brasil.
+    </header>
+    <main>
+        <div>
+            <form class="search">
+                <input class="search-input" name="query" placeholder="Pesquise pelo CEP" type="search" id="search" />
+                <input type="submit" class="search-button" value="pesquisar" />
+            </form>
+            <span>você deve fornecer os dados no formato de {8} dígitos como por exemplo: "01001000"</span>
+        </div>
+        <div id="card">
+            <span>As informações aparecerão aqui</span>
+        </div>
+    </main>
+    <script src="script.js"></script>
+</body>
+
+</html>
