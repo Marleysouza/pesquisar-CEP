@@ -24,7 +24,7 @@ form.addEventListener('submit', function (event) {
         card.children[2].children[9].innerText = endereço.siafi;
         
         exp.innerText = `CEP: ${input}`
-        docbtn.innerHTML = `<a href="https://viacep.com.br/ws/${input}/json/" target="_blank" rel="noopener noreferrer">json</a><a href="https://viacep.com.br/ws/${input}/xml/" target="_blank" rel="noopener noreferrer">xml</a><a href="https://www.google.com.br/maps/search/${input}+${endereço.uf}/@-3.7276344,-38.4901343,14z/data=!3m1!4b1?entry=" target="_blank" rel="noopener noreferrer">Maps</a>`
+        docbtn.innerHTML = `<a href="https://viacep.com.br/ws/${input}/json/" target="_blank" rel="noopener noreferrer">json</a><a href="https://viacep.com.br/ws/${input}/xml/" target="_blank" rel="noopener noreferrer">xml</a><a href="https://www.google.com.br/maps/search/${endereço.logradouro}+${endereço.uf}/@-3.7276344,-38.4901343,14z/data=!3m1!4b1?entry=" target="_blank" rel="noopener noreferrer">Maps</a>`
     }
     submitCEP();
 })
